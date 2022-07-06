@@ -24,7 +24,7 @@ const Search: FC<SearchProps> = ({ title }) => {
     }
 
     dispatch(setLoading());
-    dispatch(getWeather(city));
+    dispatch<any>(getWeather(city));
     setCity('');
   }
 
